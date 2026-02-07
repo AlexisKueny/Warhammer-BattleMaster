@@ -28,7 +28,7 @@ export default function RootLayout({
         <body
           className={`${blackletter.variable} antialiased`}
         >
-          <Header />
+          <Header/>
           {children}
         </body>
       </AntdRegistry>
