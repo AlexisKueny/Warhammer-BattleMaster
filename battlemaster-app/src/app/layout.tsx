@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import "@/globals.css";
 import { UnifrakturMaguntia } from "next/font/google";
+import { UnifrakturCook } from "next/font/google";
+import { Pirata_One } from "next/font/google";
 import { AntdRegistry } from '@ant-design/nextjs-registry';
-import  AppHeader  from '@/_components/header';
+import Header from '@/_components/header';
 
-const unifrakturMaguntia = UnifrakturMaguntia({ 
-    subsets: ['latin'],
-    weight: "400",
-    variable: "--font-unifraktur-maguntia"
+const blackletter = Pirata_One({
+  subsets: ['latin'],
+  weight: "400",
+  variable: "--blackletter"
 })
 
 export const metadata: Metadata = {
@@ -22,14 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${unifrakturMaguntia.className} antialiased`}
-      >
-        <AntdRegistry>
-          <AppHeader/>
+      <AntdRegistry>
+        <body
+          className={`${blackletter.variable} antialiased`}
+        >
+          <Header />
           {children}
-        </AntdRegistry>
-      </body>
+        </body>
+      </AntdRegistry>
     </html>
   );
 }

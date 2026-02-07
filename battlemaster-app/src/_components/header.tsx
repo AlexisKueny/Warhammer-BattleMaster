@@ -1,11 +1,15 @@
-import { Header } from "antd/es/layout/layout";
+import { Flex } from "antd";
+import styles from "@/_components/components.module.css"
 
-export default function AppHeader() {
+export default function Header() {
     return (
-        <Header
-            color="--bg-light"
+        <header
+            className={styles.header}
         >
-            Header element
-        </Header>
+            <Flex gap="small">
+                <p>Header element 1</p> 
+                <p>Header element 2</p>
+            </Flex>
+        </header>
     )
 }
