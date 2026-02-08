@@ -1,3 +1,4 @@
+/*Header*/
 .header {
     background: var(--bg-light);
     border-bottom: solid 1px var(--border-muted);
@@ -5,4 +6,15 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 0.5rem;
+    height: 80px;
+}
+
+/*Avatar*/
+.avatar {
+    background: var(--gradient) !important;
+    border: solid 1px var(--border-muted) !important;
+}
+
+.avatar:hover {
+    background: var(--gradient-hover) !important;
 }

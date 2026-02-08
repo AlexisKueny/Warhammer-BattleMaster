@@ -1,14 +1,13 @@
 :root {
   --bg-dark: hsl(0 0% 1%);
-  --bg: hsl(0 0% 4%);
-  --bg-light: hsl(0 0% 9%);
+  --bg: hsl(0 0% 5%);
+  --bg-light: hsl(0 0% 10%);
   --text: hsl(0 0% 95%);
   --text-muted: hsl(0 0% 70%);
   --border: hsl(0 0% 32%);
   --border-muted: hsl(0 0% 24%);
-  --gradient: linear-gradient(
-    0deg, var(--bg), var(--bg-light)
-  )
+  --gradient: linear-gradient(0deg, var(--bg-light), var(--bg-dark));
+  --gradient-hover: linear-gradient(0deg, var(--bg-light) 95%, var(--bg-dark));
 }
 
 body {

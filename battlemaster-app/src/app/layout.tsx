@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "@/globals.css";
-import { UnifrakturMaguntia } from "next/font/google";
-import { UnifrakturCook } from "next/font/google";
 import { Pirata_One } from "next/font/google";
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import Header from '@/_components/header';
@@ -24,14 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <AntdRegistry>
         <body
           className={`${blackletter.variable} antialiased`}
         >
-          <Header/>
-          {children}
+          <AntdRegistry>
+            <Header/>
+            {children}
+          </AntdRegistry>
         </body>
-      </AntdRegistry>
     </html>
   );
 }
