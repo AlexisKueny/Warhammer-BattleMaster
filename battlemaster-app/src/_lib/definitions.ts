@@ -1,6 +1,6 @@
 
 
 export interface Game {
-    id: Number;
+    id: number;
     name: String;
 };

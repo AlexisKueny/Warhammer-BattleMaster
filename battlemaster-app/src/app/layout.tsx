@@ -22,14 +22,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <body
-          className={`${blackletter.variable} antialiased`}
-        >
-          <AntdRegistry>
-            <Header/>
+      <body
+        className={`${blackletter.variable} antialiased`}
+      >
+        <AntdRegistry>
+          <Header />
+          <main>
             {children}
-          </AntdRegistry>
-        </body>
+          </main>
+        </AntdRegistry>
+      </body>
     </html>
   );
 }

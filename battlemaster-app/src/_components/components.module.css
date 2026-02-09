@@ -18,3 +18,14 @@
 .avatar:hover {
     background: var(--gradient-hover) !important;
 }
+
+/*Game cards*/
+.gameCard {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+    width: 50vw !important;
+}
+
+.gameCard :global(.ant-card-head) {
+    color: var(--text) !important;
+}

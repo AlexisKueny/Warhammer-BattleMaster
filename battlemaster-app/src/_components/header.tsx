@@ -10,15 +10,15 @@ function AvatarMenu({ children }: { children: React.ReactNode }) {
     const items: MenuProps['items'] = [
         {
             key: 1,
-            label: 'Login'
+            label: 'login'
         },
         {
             key: 2,
-            label: 'Settings'
+            label: 'settings'
         },
         {
             key: 3,
-            label: 'Logout'
+            label: 'logout'
         }
     ];
 
