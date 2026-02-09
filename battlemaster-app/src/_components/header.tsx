@@ -4,7 +4,6 @@ import { Avatar, Button, Dropdown } from "antd";
 import type { DropdownProps, MenuProps } from 'antd';
 import { UserOutlined } from "@ant-design/icons";
 import styles from "@/_components/components.module.css";
-import Image from "next/image";
 
 function AvatarMenu({ children }: { children: React.ReactNode }) {
     const items: MenuProps['items'] = [
@@ -14,10 +13,6 @@ function AvatarMenu({ children }: { children: React.ReactNode }) {
         },
         {
             key: 2,
-            label: 'settings'
-        },
-        {
-            key: 3,
             label: 'logout'
         }
     ];
@@ -39,14 +34,6 @@ function AvatarMenu({ children }: { children: React.ReactNode }) {
 export default function Header() {
     return (
         <header className={styles.header}>
-            <Image
-                src="/transparentLogo.svg"
-                alt="Logo with text"
-                width={150}
-                height={75}
-                className={styles.logo}
-                priority
-            />
             <h3>Header element 1</h3>
             <h3>Header element 2</h3>
             <AvatarMenu>

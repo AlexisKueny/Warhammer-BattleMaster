@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "@/globals.css";
 import { Pirata_One } from "next/font/google";
 import { AntdRegistry } from '@ant-design/nextjs-registry';
-import Header from '@/_components/header';
 
 const blackletter = Pirata_One({
   subsets: ['latin'],
@@ -26,10 +25,7 @@ export default function RootLayout({
         className={`${blackletter.variable} antialiased`}
       >
         <AntdRegistry>
-          <Header />
-          <main>
-            {children}
-          </main>
+          {children}
         </AntdRegistry>
       </body>
     </html>
