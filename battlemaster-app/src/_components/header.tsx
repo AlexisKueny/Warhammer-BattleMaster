@@ -4,6 +4,7 @@ import { Avatar, Button, Dropdown } from "antd";
 import type { DropdownProps, MenuProps } from 'antd';
 import { UserOutlined } from "@ant-design/icons";
 import styles from "@/_components/components.module.css";
+import clsx from "clsx";
 
 function AvatarMenu({ children }: { children: React.ReactNode }) {
     const items: MenuProps['items'] = [
@@ -31,9 +32,12 @@ function AvatarMenu({ children }: { children: React.ReactNode }) {
     )
 }
 
-export default function Header() {
+export default function Header({ variant }: { variant?: "dark" }) {
     return (
-        <header className={styles.header}>
+        <header className={clsx(
+            styles.header, 
+            {[styles.headerDark]: variant === "dark",}
+            )}>
             <h3>Header element 1</h3>
             <h3>Header element 2</h3>
             <AvatarMenu>

@@ -19,8 +19,13 @@ body {
 
 main {
   margin-left: 20px;
+  height: 100vh;
 }
 
 h2 {
   color: var(--text-muted)
+}
+
+li {
+  font-size: medium;
 }

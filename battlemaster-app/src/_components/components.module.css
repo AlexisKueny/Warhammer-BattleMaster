@@ -10,6 +10,10 @@
     width: 100%;
 }
 
+.headerDark {
+    background: var(--bg-dark);
+}
+
 /*Avatar*/
 .avatar {
     background: var(--gradient) !important;
@@ -29,4 +33,10 @@
 
 .gameCard :global(.ant-card-head) {
     color: var(--text) !important;
+}
+
+/*Sidebar*/
+.sidebar {
+    background: var(--bg-light);
+    height: 100vh;
 }
